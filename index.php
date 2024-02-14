@@ -8,7 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Realistic</title>
+<title>BarisReal</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
 <script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
@@ -129,8 +129,25 @@ function ekranayaz($Hesapla){
         <p>For more CSS templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>. Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum.</p>
       </div>
       <div class="spacer">&nbsp;</div>
-      <div class="block"><img src="images/demo/46x46.gif" width="46" height="46" alt="" /><strong>Lorum ipsum dolor</strong>
-        <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aenean nunc aenean quis nam nis dui.</p>
+      <div class="block"><img src="images/demo/46x46.gif" width="46" height="46" alt="" /><strong>Uygulama 2</strong>
+        <p><?php
+ date_default_timezone_set('Europe/Istanbul');
+
+ $dogum_tarihi = mktime(0, 0, 0, 7, 12 , 2007);
+ $suan=time();
+
+  $gecen_zaman=$suan-$dogum_tarihi;
+
+ echo "Bugün=".date('d.m.Y H:i:s',$suan)."<br>";
+ echo "Doğum günü=".date('d.m.Y H:i:s',$dogum_tarihi)."<br><hr>";
+ echo "Geçen Yıl=".round($gecen_zaman/(60*60*24*365))." yıl<br>";
+ echo "Geçen Ay=".round($gecen_zaman/(60*60*24*30))." ay<br>";
+ echo "Geçen Hafta=".round($gecen_zaman/(60*60*24*7))." hafta<br>";
+ echo "Geçen Gün=".round($gecen_zaman/(60*60*24))." gün<br>";
+ echo "Geçen Saat=".round($gecen_zaman/(60*60))." sa<br>";
+ echo "Geçen Dakika=".round(($gecen_zaman/60))." dk<br>";
+ echo "Geçen Saniye=".$gecen_zaman." sn<br>";
+?></p>
       </div>
       <div class="block"><img src="images/demo/46x46.gif" width="46" height="46" alt="" /><strong>Lorum ipsum dolor</strong>
         <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aenean nunc aenean quis nam nis dui.</p>
